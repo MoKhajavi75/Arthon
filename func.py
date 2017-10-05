@@ -7,7 +7,8 @@ import linecache
 
 
 # Set the Alphabet folder path
-folder_path = Path("Alphabet").resolve()
+alphabet_folder_path = Path("Alphabet").resolve()
+number_folder_path = Path("Number").resolve()
 result = open("Result.txt", 'w')
 
 
@@ -22,12 +23,18 @@ def letter_reader(user_text):
 
             # if it's Capital - AA is Capital A
             if 65 <= ord(letter) <= 90:
-                letter_file = str(folder_path) + str("\\") + str(letter) + str(letter) + ".txt"
+                letter_file = str(alphabet_folder_path) + str("\\") + str(letter) + str(letter) + ".txt"
                 letter_txt = linecache.getline(letter_file, line_number).strip('\n')
                 result.write(letter_txt)
 
             # if it's small - a is small a
             elif 97 <= ord(letter) <= 122:
+                letter_file = str(alphabet_folder_path) + str("\\") + str(letter) + ".txt"
+                letter_txt = linecache.getline(letter_file, line_number).strip('\n')
+                result.write(letter_txt)
+
+            # if it's Number
+            elif 48 <= ord(letter) <= 57:
                 letter_file = str(folder_path) + str("\\") + str(letter) + ".txt"
                 letter_txt = linecache.getline(letter_file, line_number).strip('\n')
                 result.write(letter_txt)
