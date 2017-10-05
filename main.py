@@ -7,4 +7,4 @@ import alphabet
 user_text = input("Please Enter Your String:\n")
 arr = list(user_text)
 
-alphabet.capital_letter_reader(str(user_text))
+alphabet.letter_reader(str(user_text))
