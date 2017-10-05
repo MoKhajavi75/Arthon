@@ -2,9 +2,9 @@
 # 2017-10-05
 # ********************
 
-import alphabet
+import func
 
 user_text = input("Please Enter Your String:\n")
 arr = list(user_text)
 
-alphabet.letter_reader(str(user_text))
+func.letter_reader(str(user_text))
