@@ -7,9 +7,9 @@ from pathlib import Path
 
 # Set the Alphabet folder path
 folder_path = Path("Alphabet").resolve()
-#result_path = Path("Result.txt", 'a')
 
-# Read all Capital Letters - AA is Capital A
+
+# Read all Letters
 def letter_reader(letter):
     # if it's Capital - AA is Capital A
     if 65 <= ord(letter) <= 90:
