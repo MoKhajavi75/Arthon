@@ -39,6 +39,10 @@ def letter_reader(user_text):
                 letter_txt = linecache.getline(letter_file, line_number).strip('\n')
                 result.write(letter_txt)
 
+            # if it's Space
+            elif ord(letter) == 32:
+                result.write("   ")
+
             # if it's symbol - NOT SUPPORTED in Ver. 2.0 - Will Be Added in Ver. 3.0
             else:
                 print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
