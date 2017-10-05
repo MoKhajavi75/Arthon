@@ -35,11 +35,11 @@ def letter_reader(user_text):
 
             # if it's Number
             elif 48 <= ord(letter) <= 57:
-                letter_file = str(folder_path) + str("\\") + str(letter) + ".txt"
+                letter_file = str(number_folder_path) + str("\\") + str(letter) + ".txt"
                 letter_txt = linecache.getline(letter_file, line_number).strip('\n')
                 result.write(letter_txt)
 
-            # if it's symbol or number - NOT SUPPORTED in Ver. 1.0
+            # if it's symbol - NOT SUPPORTED in Ver. 2.0 - Will Be Added in Ver. 3.0
             else:
                 print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
                       "I'll Add them in Ver. 2.0")
