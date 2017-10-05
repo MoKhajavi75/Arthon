@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Set the Alphabet folder path
 folder_path = Path("Alphabet").resolve()
-
+#result_path = Path("Result.txt", 'a')
 
 # Read all Capital Letters - AA is Capital A
 def letter_reader(letter):
@@ -27,5 +27,8 @@ def letter_reader(letter):
               "I'll Add them in Ver. 2.0")
         return
 
-    print(letter_txt)
+    result = open("Result.txt", 'a')
+    result.write(letter_txt)
+
+    result.close()
     letter_file.close()
