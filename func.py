@@ -21,10 +21,11 @@ def letter_reader(letter):
         letter_file = open(str(folder_path) + str("\\") + str(letter) + ".txt", 'r')
         letter_txt = letter_file.read()
 
-    # if it's symbol
+    # if it's symbol or number - NOT SUPPORTED in Ver. 1.0
     else:
-        letter_file = open(str(folder_path) + str("\\") + str(letter) + ".txt", 'r')
-        letter_txt = letter_file.read()
+        print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
+              "I'll Add them in Ver. 2.0")
+        return
 
     print(letter_txt)
     letter_file.close()
