@@ -3,6 +3,7 @@
 # ********************
 
 from pathlib import Path
+import linecache
 
 
 # Set the Alphabet folder path
@@ -10,25 +11,31 @@ folder_path = Path("Alphabet").resolve()
 
 
 # Read all Letters
-def letter_reader(letter):
-    # if it's Capital - AA is Capital A
-    if 65 <= ord(letter) <= 90:
-        letter_file = open(str(folder_path) + str("\\") + str(letter) + str(letter) + ".txt", 'r')
-        letter_txt = letter_file.read()
+def letter_reader(user_text):
 
-    # if it's small - a is small a
-    elif 97 <= ord(letter) <= 122:
-        letter_file = open(str(folder_path) + str("\\") + str(letter) + ".txt", 'r')
-        letter_txt = letter_file.read()
+    for line_number in range(1, 10):
 
-    # if it's symbol or number - NOT SUPPORTED in Ver. 1.0
-    else:
-        print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
-              "I'll Add them in Ver. 2.0")
-        return
+        arr = list(user_text)
+        for x in range(0, len(arr)):
+            letter = arr[x]
 
-    result = open("Result.txt", 'a')
-    result.write(letter_txt)
+            # if it's Capital - AA is Capital A
+            if 65 <= ord(letter) <= 90:
+                letter_file = str(folder_path) + str("\\") + str(letter) + str(letter) + ".txt"
+                letter_txt = linecache.getline(letter_file, line_number)
+
+            # if it's small - a is small a
+            elif 97 <= ord(letter) <= 122:
+                letter_file = str(folder_path) + str("\\") + str(letter) + str(letter) + ".txt"
+                letter_txt = linecache.getline(letter_file, line_number)
+
+            # if it's symbol or number - NOT SUPPORTED in Ver. 1.0
+            else:
+                print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
+                      "I'll Add them in Ver. 2.0")
+                return
+
+            result = open("Result.txt", 'a')
+            result.write(letter_txt + " ")
 
     result.close()
-    letter_file.close()
