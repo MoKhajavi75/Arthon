@@ -28,8 +28,8 @@ def letter_reader(user_text):
 
             # if it's small - a is small a
             elif 97 <= ord(letter) <= 122:
-                letter_file = str(folder_path) + str("\\") + str(letter) + str(letter) + ".txt"
-                letter_txt = linecache.getline(letter_file, line_number)
+                letter_file = str(folder_path) + str("\\") + str(letter) + ".txt"
+                letter_txt = linecache.getline(letter_file, line_number).strip('\n')
                 result.write(letter_txt)
 
             # if it's symbol or number - NOT SUPPORTED in Ver. 1.0
