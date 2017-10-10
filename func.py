@@ -52,3 +52,10 @@ def arthonize(user_text):
         result.write('\n')
 
     result.close()
+
+
+def lower(user_text):
+    arr = list(user_text)
+    arr = [element.lower() for element in arr]
+    arthonize(arr)
+
