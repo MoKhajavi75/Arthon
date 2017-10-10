@@ -8,5 +8,6 @@ import func
 user_text = input("Please Enter Your String:\n")
 
 # func.lower(user_text)
+# func.upper(user_text)
 
 func.arthonize(user_text)
