@@ -7,4 +7,4 @@ import func
 
 user_text = input("Please Enter Your String:\n")
 
-func.letter_reader(user_text)
+func.arthonize(user_text)

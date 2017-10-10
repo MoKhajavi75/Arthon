@@ -12,8 +12,8 @@ number_folder_path = Path("Number").resolve()
 result = open("Result.txt", 'w')
 
 
-# Read all Letters
-def letter_reader(user_text):
+# Create Pure Arthon [ Python + Art ]
+def arthonize(user_text):
 
     for line_number in range(1, 10):
 
