@@ -45,8 +45,8 @@ def letter_reader(user_text):
 
             # if it's symbol - NOT SUPPORTED in Ver. 2.0 - Will Be Added in Ver. 3.0
             else:
-                print("Sorry, Numbers and Symbols are NOT supported yet :)\n"
-                      "I'll Add them in Ver. 2.0")
+                print("Sorry, Symbols are NOT supported yet :)\n"
+                      "I'll Add them in Ver. 3.0")
                 return
 
         result.write('\n')
