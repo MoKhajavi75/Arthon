@@ -1,4 +1,4 @@
-# PyArt by MohamadKh75
+# Arthon by MohamadKh75
 # 2017-10-05
 # ********************
 
