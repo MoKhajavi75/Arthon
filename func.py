@@ -12,6 +12,13 @@ number_folder_path = Path("Number").resolve()
 symbol_folder_path = Path("Symbol").resolve()
 
 
+# Find the Path of Symbol
+def pathFinder(letter):
+    return {
+        '!': str(symbol_folder_path) + str("\\") + "!.txt"
+    }[letter]
+
+
 # Create Pure Arthon [ Art + Python ]
 def arthonize(user_text):
     result = open("Result.txt", 'w')
@@ -45,8 +52,10 @@ def arthonize(user_text):
                 result.write("   ")
 
             # if it's Symbol
-            elif ord(letter) == 32:
-                result.write("   ")
+            elif ord(letter) == 33 or 35 or 44 or 46 or 45 or 64 or 95 or 46 or 58:
+                letter_file = pathFinder(letter)
+                letter_txt = linecache.getline(letter_file, line_number).strip('\n')
+                result.write(letter_txt)
 
             # if it's some kind of special symbol
             # NOT SUPPORTED in Ver. 3.0 - Will Be Added in Ver. 3.1 Someday Maybe...!
