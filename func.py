@@ -9,11 +9,12 @@ import linecache
 # Set the Alphabet folder path
 alphabet_folder_path = Path("Alphabet").resolve()
 number_folder_path = Path("Number").resolve()
-result = open("Result.txt", 'w')
+symbol_folder_path = Path("Symbol").resolve()
 
 
 # Create Pure Arthon [ Art + Python ]
 def arthonize(user_text):
+    result = open("Result.txt", 'w')
 
     for line_number in range(1, 10):
 
@@ -43,7 +44,12 @@ def arthonize(user_text):
             elif ord(letter) == 32:
                 result.write("   ")
 
-            # if it's symbol - NOT SUPPORTED in Ver. 2.0 - Will Be Added in Ver. 3.0
+            # if it's Symbol
+            elif ord(letter) == 32:
+                result.write("   ")
+
+            # if it's some kind of special symbol
+            # NOT SUPPORTED in Ver. 3.0 - Will Be Added in Ver. 3.1 Someday Maybe...!
             else:
                 print("Sorry, Some Symbols are NOT supported yet :)\n"
                       "Someday I'll Add them in Ver. 3.1, Maybe!")
@@ -52,6 +58,10 @@ def arthonize(user_text):
         result.write('\n')
 
     result.close()
+
+
+def terminalize(user_text):
+    """Coming Soon!"""
 
 
 def lower(user_text):
