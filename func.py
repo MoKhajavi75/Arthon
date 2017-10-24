@@ -77,10 +77,6 @@ def arthonize(user_text):
     result.close()
 
 
-def terminalize(user_text):
-    """Coming Soon!"""
-
-
 def lower(user_text):
     arr = list(user_text)
     arr = [element.lower() for element in arr]
