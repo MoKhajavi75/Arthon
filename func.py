@@ -15,7 +15,15 @@ symbol_folder_path = Path("Symbol").resolve()
 # Find the Path of Symbol
 def pathFinder(letter):
     return {
-        '!': str(symbol_folder_path) + str("\\") + "!.txt"
+        '!': str(symbol_folder_path) + str("\\") + "!.txt",
+        '#': str(symbol_folder_path) + str("\\") + "#.txt",
+        ',': str(symbol_folder_path) + str("\\") + ",.txt",
+        '.': str(symbol_folder_path) + str("\\") + "." + ".txt",
+        '-': str(symbol_folder_path) + str("\\") + "-.txt",
+        '@': str(symbol_folder_path) + str("\\") + "@.txt",
+        '_': str(symbol_folder_path) + str("\\") + "_.txt",
+        '+': str(symbol_folder_path) + str("\\") + "+.txt",
+        ':': str(symbol_folder_path) + str("\\") + "colon.txt",
     }[letter]
 
 
