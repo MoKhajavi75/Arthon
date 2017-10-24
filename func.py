@@ -64,3 +64,9 @@ def upper(user_text):
     arr = list(user_text)
     arr = [element.upper() for element in arr]
     arthonize(arr)
+
+
+def toggle(user_text):
+    arr = list(user_text)
+    arr = [element.swapcase() for element in arr]
+    arthonize(arr)
