@@ -12,7 +12,7 @@ number_folder_path = Path("Number").resolve()
 result = open("Result.txt", 'w')
 
 
-# Create Pure Arthon [ Python + Art ]
+# Create Pure Arthon [ Art + Python ]
 def arthonize(user_text):
 
     for line_number in range(1, 10):
