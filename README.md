@@ -33,8 +33,10 @@
 	
 ----------
 
+
 ## Overview			
 Simple Ascii Art Text Generator :sunglasses:
+
 
 ## Installation
 
@@ -42,9 +44,9 @@ Simple Ascii Art Text Generator :sunglasses:
 - Download [Latest Source ](https://github.com/MohamadKh75/Arthon/archive/master.zip)
 - `python setup.py install` (Need root access)
 
-
 ### PyPI
 - `pip install Arthon` or `pip3 install Arthon` (Need root access)
+
 
 ## Usage
 ```
@@ -66,24 +68,16 @@ Simple Ascii Art Text Generator :sunglasses:
 
 
 ## Bug Reports
-
 Feel free to poke me by email [khajavi_mohamad[at]yahoo.com](mailto:khajavi_mohamad@yahoo.com "khajavi_mohamad@yahoo.com")
 
 
-
 ## Contribution
-
-You can fork the repository, improve or fix some part of it and then send the pull requests back if you want to see them here. I really appreciate that. ❤️			
-
-Remember to write a few tests for your code before sending pull requests. 
-
+Feel free to fork and improvee it BUT don't forget to send me the pull request :smile: 
 
 
 ## License
-
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/MohamadKh75/Arthon)
 
 
 ## P.S    
 > I used [This Awesome Website](http://www.network-science.de/ascii/ "ASCII Generator") to create my letters!
-
