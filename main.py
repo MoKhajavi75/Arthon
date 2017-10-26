@@ -2,7 +2,7 @@
 # 2017-10-05
 # ********************
 
-import arthon
+import Arthon
 
 
-arthon.arthonize("Hello")
+Arthon.arthonize("Arthon")
