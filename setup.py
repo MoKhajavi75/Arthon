@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'Arthon',
   packages = ['Arthon'],
-  version = '1.0',
+  version = '0.1',
   description = 'Art + Python\nASCII Art Maker',
   author = 'MohamadKh75',
   author_email = 'khajavi_mohamad@yahoo.com',
