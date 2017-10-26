@@ -1,8 +1,6 @@
 # Art + Python = Arthon :grin:
 <div align="center">
 
---------
-
 ```
                                               _   _                 
                                    /\        | | | |                
