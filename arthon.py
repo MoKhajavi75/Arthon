@@ -69,7 +69,7 @@ def arthonize(user_text):
             # NOT SUPPORTED in Ver. 3.0 - Will Be Added in Ver. 3.1 Someday Maybe...!
             else:
                 print("Sorry, Some Symbols are NOT supported yet :)\n"
-                      "Someday I'll Add them in Ver. 3.1, Maybe!")
+                      "Someday I'll Add them in next version, Maybe!")
                 return
 
         result.write('\n')
