@@ -27,6 +27,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/03bc42aef017447eaff224cba82c1690)](https://www.codacy.com/app/MohamadKh75/Arthon?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MohamadKh75/Arthon&amp;utm_campaign=Badge_Grade)
 [![PyPI version](https://badge.fury.io/py/Arthon.svg)](https://badge.fury.io/py/Arthon)
 [![Built With](https://img.shields.io/badge/built%20with-Python3-yellow.svg)](https://img.shields.io/badge/built%20with-Python3-yellow.svg)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/MohamadKh75)
 </div>
 	
 ----------
